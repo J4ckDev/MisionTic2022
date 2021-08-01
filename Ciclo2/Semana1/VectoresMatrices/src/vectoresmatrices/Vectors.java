@@ -78,7 +78,14 @@ public class Vectors {
     }
 
     public static double median(double[] vector) {
-        return 0.0;
+        vector = sort(vector);
+        int vectorSize = vector.length;
+        int centerNumber = vectorSize / 2;
+        if (vectorSize % 2 == 0) {
+            return (vector[centerNumber - 1] + vector[centerNumber]) / 2;
+        } else {
+            return vector[centerNumber];
+        }
     }
 
     public static double[] moveZerosToLast(double[] vector) {
@@ -133,12 +140,21 @@ public class Vectors {
         int maxPosition = positionMaxNumber(vector);
         return vector[maxPosition];
     }
-    
-    public static double[] scalarMultiplication(int scalar, double[] vector){
+
+    public static double[] scalarMultiplication(int scalar, double[] vector) {
         int totalNumbers = vector.length;
         double[] result = new double[totalNumbers];
         for (int index = 0; index < totalNumbers; index++) {
             result[index] = scalar * vector[index];
+        }
+        return result;
+    }
+    
+    public static double sum(double[] vector){
+        int totalNumbers = vector.length;
+        double result = 0;
+        for (int number = 0; number < totalNumbers; number++) {
+            result += vector[number];
         }
         return result;
     }
