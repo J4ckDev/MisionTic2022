@@ -28,6 +28,7 @@ public class TicTacToe {
             boolean isValidSymbol = symbol == 'X' || symbol == 'O';
             if (isValidSymbol && isAnEmptySquare(verifySquare(row, column))) {
                 table[row][column] = symbol;
+                return true;
             }
         }
         return false;

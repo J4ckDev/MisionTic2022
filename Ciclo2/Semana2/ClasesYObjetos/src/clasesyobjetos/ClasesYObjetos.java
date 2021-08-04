@@ -33,45 +33,37 @@ public class ClasesYObjetos {
 
         // Ejercicio 3
         TicTacToe triki = new TicTacToe();
-        char winner;
+        char winner = 'a';
+        char nextMove = 'X';
+        int row;
+        int column;
+        byte totalMoves = 0;
+        boolean isSquareFilled;
+        boolean isGameRunning = true;
         System.out.println("Triki inicializado");
+        System.out.println("Siguiente turno: " + nextMove);
         System.out.println();
         System.out.println(triki.toString());
-        triki.fillSquare('x', 0, 1);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
-        triki.fillSquare('o', 2, 2);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
-        triki.fillSquare('x', 1, 1);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
-        triki.fillSquare('o', 2, 1);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
-        triki.fillSquare('X', 2, 0);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
-        triki.fillSquare('o', 0, 0);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();        
-        triki.fillSquare('x', 0, 2);
-        System.out.println(triki.toString());
-        winner = triki.verifyWinner();
-        System.out.println("Hay ganador? " + (winner == 'a' ? "No" : ("Sí, el jugador que usó " + winner)));
-        System.out.println();
+        while (isGameRunning) {
+            row = (int) Math.floor(Math.random() * 3);
+            column = (int) Math.floor(Math.random() * 3);
+            isSquareFilled = triki.fillSquare(nextMove, row, column);
+            winner = triki.verifyWinner();
+            isGameRunning = winner == 'a' && totalMoves < 9;
+            if (isGameRunning) {
+                if (!isSquareFilled) {
+                    continue;
+                }
+                nextMove = nextMove == 'X' ? 'O' : 'X';
+                System.out.println("Siguiente turno: " + nextMove);                
+            } else {
+                System.out.println(winner == 'a' ? "Terminó en empate." : "El ganador fue " + winner);
+            }
+            System.out.println();
+            System.out.println(triki.toString());
+            totalMoves++;
+        }
+                
     }
 
 }
