@@ -21,7 +21,7 @@ Para el desarrollo de los ejercicios de esta semana fue necesario instalar MySQL
     -- Consultamos de nuevo para comprobar que el cambio surtió efecto
     SELECT User, Host, plugin FROM mysql.user;
     ```
-    Pantallazo de la configuración:
+    Pantallazo de la configuración:  
     ![Configuración de MySQL](./images/mysqlconfig.png)
 7. Con esto realizado, le damos exit. Cabe mencionar que el comando `sudo mysql -u root -p` solo se puede usar una vez, por lo que el siguiente paso es ejecutar el comando `mysqladmin -u root password tupassword` para cambiar la contraseña de root en MySQL.
 
