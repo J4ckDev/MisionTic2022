@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicon16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicon32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/favicon96x96.png"
+      sizes="96x96"
+    />
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/touch-ipad.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./img/touch-iphone.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./img/touch-ipad-ret.png"
+    />
+    <title>UMT - Iniciar Sesión</title>
+  </head>
+  <body id="body-login">
+    <header id="header-login">
+      <div id="logo-title" class="bg-ligth-3">
+        <img
+          id="logo-login"
+          src="./img/Logo.svg"
+          alt="Logo Universidad Misión TIC"
+        />
+        <h1 class="text-dark-1 text-h1">Universidad Misión TIC</h1>
+      </div>
+    </header>
+
+    <section id="login" class="bg-ligth-3">
+      <h2 class="text-dark-2">Ingresar al sistema</h2>
+      <form id="form-login">
+        <div class="form-control text-dark-2">
+          <label class="label" for="username">Nombre de usuario</label>
+          <div class="input-with-icon">
+            <input
+              id="username"
+              type="text"
+              class="input text-dark-3"
+              placeholder="Ingrese su nombre de usuario"
+            />
+            <svg class="icon">
+              <use href="./img/icons.svg#usuario"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-control text-dark-2">
+          <label class="label" for="password">Contraseña</label>
+          <div class="input-with-icon">
+            <input
+              id="password"
+              type="password"
+              class="input text-dark-3"
+              placeholder="Ingrese su contraseña"
+            />
+            <svg class="icon">
+              <use href="./img/icons.svg#contraseña"></use>
+            </svg>
+          </div>
+        </div>
+        <button class="btn text-ligth-3 bg-primary-dark">Iniciar Sesión</button>
+        <br/>
+        <button class="btn outline text-secondary-dark">
+            <svg class="icon">
+              <use href="./img/icons.svg#usuario"></use>
+            </svg>
+            Iniciar Sesión
+          </button>
+      </form>
+    </section>
+  </body>
+</html>

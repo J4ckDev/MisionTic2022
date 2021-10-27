@@ -1,0 +1,153 @@
+#body-data-view{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#header-data-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+#menu-button{
+    cursor: pointer;
+    fill: var(--color-dark-3);
+}
+
+#menu-button:hover{
+    fill: var(--color-dark-1);
+}
+
+#logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-title h1{
+    margin: 0;
+}
+
+#logo-header{
+    width: 2.625rem;
+    margin-right: var(--spacing-small);
+}
+
+#logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--typography);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#logout > .icon{
+    margin-left: 0.25rem;
+    padding: 0.5rem 0 0.5rem 0;
+    fill: var(--color-dark-3);
+}
+
+#logout:hover{
+    color: var(--color-dark-1);
+}
+
+#logout:hover > .icon{
+    fill: var(--color-dark-1);
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#menu{
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: var(--spacing-small) 0;
+}
+
+#menu-check{
+    display: none;
+}
+
+#menu-content {
+    display:none;
+}
+
+#menu-check:checked ~ #menu-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-medium);
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--typography);
+    margin: var(--spacing-small) 0;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0.25rem 0 0.25rem 0.25rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-button .icon-menu{
+    fill: var(--color-light-3);
+}
+
+.menu-button:hover{
+    background-color: var(--color-white);
+    color: var(--color-secondary-dark);
+}
+
+.menu-button:hover .icon-menu{
+    fill: var(--color-secondary-dark);
+}
+
+.menu-button > .icon{
+    display: none;
+}
+
+.active{
+    background-color: var(--color-white);
+    color:var(--color-secondary-dark);
+}
+
+.active .icon-menu{
+    fill: var(--color-secondary-dark);
+}
+
+.active > .icon{
+    display: block;
+    fill: var(--color-secondary-dark);
+}
+
+.active:hover{
+    filter: brightness(120%);
+}
+
+.icon-text{
+    display: inherit;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon-menu{
+    width: 2rem;
+    height: 2rem;
+}
+
+.text-menu{
+    margin-right: var(--spacing-medium)
+}
+
+.icon-text > .icon-menu{
+    margin-right: var(--spacing-small);
+}

@@ -6,3 +6,6 @@ En este ciclo se realizó la introducción a la programación con el lenguaje de
 
 ## Ciclo 2
 Durante el ciclo 2 se realizó el estudio de la programación orientada a objetos con el lenguaje de programación Java y la introducción a las bases de datos relacionales con MySQL. Se solucionaron los retos que se desarrollaron durante el ciclo y algunos ejercicios. [Click aquí para ver los ejercicios](./Ciclo2)
+
+## Ciclo 3
+Este ciclo se centró en aprender el desarrollo de aplicaciones web y aplicar los conceptos aprendidos en el ciclo anterior, como la programación orientada a objetos y el uso de bases de datos. Las tecnologías usadas fueron PostgreSQL, Django REST Framework y Vue.js. [Click aquí para ver más información del proyecto realizado](./Ciclo3)

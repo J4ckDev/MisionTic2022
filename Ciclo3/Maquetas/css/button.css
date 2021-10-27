@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: 2.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: var(--p-normal);
+  font-family: var(--typography);
+  padding: var(--spacing-small);
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn > .icon {
+  fill: var(--color-light-3);
+  margin-right: 0.25rem;
+}
+
+.outline {
+  border: var(--color-secondary-dark) 2px solid;
+  padding: 0.375rem;
+}
+
+.outline > .icon{
+    fill: var(--color-secondary-dark);
+}

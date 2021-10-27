@@ -1,0 +1,26 @@
+#data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--spacing-medium);
+}
+
+#header-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+#controls{
+    display:grid;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: auto auto;
+}
+
+#search{
+    width: 20rem;
+    margin-right: var(--spacing-large);
+}

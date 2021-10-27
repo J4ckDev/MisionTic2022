@@ -1,0 +1,53 @@
+#body-login {
+  background-image: url("../img/university.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  backdrop-filter: brightness(60%);
+  height: 100vh;
+}
+
+#header-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+#logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-medium);
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+#logo-login {
+  width: 4.9rem;
+  margin-right: var(--spacing-medium);
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: var(--spacing-large);
+    border-radius: 1.5rem;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-login > .btn{
+    margin: auto;
+}
+
+#login > h2, #form-login > .form-control{
+    margin: 0 0 1.25rem 0;
+}
