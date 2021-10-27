@@ -1,0 +1,13 @@
+#form-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: var(--spacing-medium);
+}
+
+#form-data > .form-control {
+  margin-right: var(--spacing-medium);
+}
+
+#form-data > .form-control:nth-child(n + 5) {
+  margin-top: var(--spacing-medium);
+}

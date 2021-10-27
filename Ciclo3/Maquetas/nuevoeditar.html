@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/data.css">
+    <link rel="stylesheet" href="./css/data.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link
       rel="icon"
       type="image/png"
@@ -41,7 +44,7 @@
   <body id="body-data-view">
     <header id="header-data-view" class="bg-ligth-3">
       <label id="menu-button" for="menu-check">
-        <svg class="icon">
+        <svg id="menu-icon">
           <use href="./img/icons.svg#menu"></use>
         </svg>
       </label>
@@ -64,57 +67,57 @@
       <div id="menu" class="bg-primary-dark">
         <input type="checkbox" id="menu-check" checked />
         <nav id="menu-content">
-          <button class="menu-button bg-transparent text-ligth-3 active">
-            <div class="icon-text">
+          <button class="menu-button bg-transparent text-ligth-3">
+            <span class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#carreras"></use>
               </svg>
               <span class="text-menu text-h6">Carreras</span>
-            </div>
+            </span>
             <svg class="icon">
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
           </button>
-          <button class="menu-button bg-transparent text-ligth-3">
-            <div class="icon-text">
+          <button class="menu-button bg-transparent text-ligth-3 active">
+            <span class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#materias"></use>
               </svg>
               <span class="text-menu text-h6">Materias</span>
-            </div>
+            </span>
             <svg class="icon">
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
           </button>
           <button class="menu-button bg-transparent text-ligth-3">
-            <div class="icon-text">
+            <span class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#aulas"></use>
               </svg>
               <span class="text-menu text-h6">Aulas</span>
-            </div>
+            </span>
             <svg class="icon">
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
           </button>
           <button class="menu-button bg-transparent text-ligth-3">
-            <div class="icon-text">
+            <span class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#estudiantes"></use>
               </svg>
               <span class="text-menu text-h6">Estudiantes</span>
-            </div>
+            </span>
             <svg class="icon">
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
           </button>
           <button class="menu-button bg-transparent text-ligth-3">
-            <div class="icon-text">
+            <span class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#profesores"></use>
               </svg>
               <span class="text-menu text-h6">Profesores</span>
-            </div>
+            </span>
             <svg class="icon">
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
@@ -122,7 +125,133 @@
         </nav>
       </div>
       <div id="data">
-        
+        <div id="header-data">
+          <h2 class="text-h2 text-dark-2 margin-none">Materias</h2>
+          <div id="controls">
+            <button class="btn outline text-secondary-dark bg-transparent">
+              <svg class="icon">
+                <use href="./img/icons.svg#cancelar-eliminar"></use>
+              </svg>
+              Cancelar
+            </button>
+            <label for="submit" class="btn text-ligth-3 bg-primary-dark">
+              <svg class="icon">
+                <use href="./img/icons.svg#aceptar"></use>
+              </svg>
+              Insertar (Actualizar)
+            </label>
+          </div>
+        </div>
+        <p id="detail" class="text-dark-3 margin-none">
+          Cuando rellene los siguientes campos, haga clic en el botón insertar
+          (actualizar) para guardar.
+        </p>
+        <form id="form-data">
+          <div class="form-control text-dark-2">
+            <label class="label" for="id-materia">Id Materia</label>
+            <div class="input-with-icon">
+              <input
+                id="id-materia"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese el id"
+                required
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#id"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-control text-dark-2">
+            <label class="label" for="nombre">Nombre</label>
+            <div class="input-with-icon">
+              <input
+                id="nombre"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese la materia"
+                required
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#texto"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-control text-color-dark-2">
+            <label class="label" for="carrera">Carrera</label>
+            <div class="input-with-icon">
+              <select id="carrera" class="input text-dark-3" required>
+                <option value="" selected disabled>Seleccione una carrera</option>
+                <option value="1">
+                  Ingeniería Electrónica y Telecomunicaciones
+                </option>
+                <option value="2">Filosofía</option>
+                <option value="3">Biología</option>
+                <option value="4">Medicina</option>
+              </select>
+              <svg class="icon">
+                <use href="./img/icons.svg#carreras"></use>
+              </svg>
+            </div>
+          </div> 
+          <div class="form-control text-dark-2">
+            <label class="label" for="nombre">Nombre</label>
+            <div class="input-with-icon">
+              <input
+                id="nombre"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese la materia"
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#texto"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-control text-dark-2">
+            <label class="label" for="nombre">Nombre</label>
+            <div class="input-with-icon">
+              <input
+                id="nombre"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese la materia"
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#texto"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-control text-dark-2">
+            <label class="label" for="nombre">Nombre</label>
+            <div class="input-with-icon">
+              <input
+                id="nombre"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese la materia"
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#texto"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-control text-dark-2">
+            <label class="label" for="nombre">Apellido</label>
+            <div class="input-with-icon">
+              <input
+                id="nombre"
+                type="text"
+                class="input text-dark-3"
+                placeholder="Ingrese la materia"
+              />
+              <svg class="icon">
+                <use href="./img/icons.svg#texto"></use>
+              </svg>
+            </div>
+          </div>
+          <button id="submit" type="submit" style="display: none;">Prueba</button>
+        </form>
       </div>
     </div>
   </body>

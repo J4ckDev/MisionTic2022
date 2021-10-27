@@ -20,7 +20,10 @@
     grid-template-columns: auto auto;
 }
 
+#controls > :first-child{
+    margin-right: var(--spacing-medium);
+}
+
 #search{
     width: 20rem;
-    margin-right: var(--spacing-large);
 }
