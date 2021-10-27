@@ -20,6 +20,11 @@
     fill: var(--color-dark-1);
 }
 
+#menu-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
 #logo-title {
   display: flex;
   justify-content: center;

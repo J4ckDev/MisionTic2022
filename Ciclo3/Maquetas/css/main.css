@@ -1,105 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-:root{
-    --color-primary-normal: #1976D2;
-    --color-primary-dark: #004BA0;
-    --color-secondary-normal: #F49300;
-    --color-secondary-dark: #BB6500;
-    --color-dark-1: #1e1e1e;
-    --color-dark-2: #333333;
-    --color-dark-3: #4f4f4f;
-    --color-dark-4: #848484;
-    --color-light-1: #bdbdbd;
-    --color-light-2: #dfdfdf;
-    --color-light-3: #f2f2f2;
-    --color-white: #ffffff;
-    --color-alert-success: #1D8102;
-    --color-alert-error: #C52020;
-    --color-alert-warning: #E7A628;
-    --color-alert-info: #1087AE;
+:root {
+  --color-primary-normal: #1976d2;
+  --color-primary-dark: #004ba0;
+  --color-secondary-normal: #f49300;
+  --color-secondary-dark: #bb6500;
+  --color-dark-1: #1e1e1e;
+  --color-dark-2: #333333;
+  --color-dark-3: #4f4f4f;
+  --color-dark-4: #848484;
+  --color-light-1: #bdbdbd;
+  --color-light-2: #dfdfdf;
+  --color-light-3: #f2f2f2;
+  --color-white: #ffffff;
+  --color-alert-success: #1d8102;
+  --color-alert-error: #c52020;
+  --color-alert-warning: #e7a628;
+  --color-alert-info: #1087ae;
 
-    --typography: 'Arvo', serif;
+  --typography: "Arvo", serif;
 
-    font-size: 16px;
-    --h1-font-size: 1.8rem;
-    --h2-font-size: 1.6rem;
-    --h3-font-size: 1.4rem;
-    --h4-font-size: 1.2rem;
-    --h5-font-size: 1rem;
-    --h6-font-size: 0.8rem;
-    --p-giant: 1.4rem;
-    --p-large: 1.2rem;
-    --p-normal: 1rem;
-    --p-medium: 0.8rem;
-    --p-small: 0.7rem;
-    --p-tiny: 0.6rem;
+  font-size: 16px;
+  --h1-font-size: 1.8rem;
+  --h2-font-size: 1.6rem;
+  --h3-font-size: 1.4rem;
+  --h4-font-size: 1.2rem;
+  --h5-font-size: 1rem;
+  --h6-font-size: 0.8rem;
+  --p-giant: 1.4rem;
+  --p-large: 1.2rem;
+  --p-normal: 1rem;
+  --p-medium: 0.8rem;
+  --p-small: 0.7rem;
+  --p-tiny: 0.6rem;
 
-    --spacing-small: 8px;
-    --spacing-medium: 16px;
-    --spacing-large: 24px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
 }
 
-body{
-    font-family: var(--typography);
-    margin: 0;
+body {
+  font-family: var(--typography);
+  margin: 0;
 }
 
-.text-h1{
-    font-size: var(--h1-font-size);
-    font-weight: bold;
+.text-h1 {
+  font-size: var(--h1-font-size);
+  font-weight: bold;
 }
 
-.text-h2{
-    font-size: var(--h2-font-size);
-    font-weight: bold;
+.text-h2 {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
 }
 
-.text-h6{
-    font-size: var(--h6-font-size);
-    font-weight: bold;
+.text-h5 {
+  font-size: var(--h5-font-size);
+  font-weight: bold;
 }
 
-.text-secondary-dark{
-    color: var(--color-secondary-dark);
+.text-h6 {
+  font-size: var(--h6-font-size);
+  font-weight: bold;
 }
 
-.text-dark-1{
-    color: var(--color-dark-1);
+.text-secondary-dark {
+  color: var(--color-secondary-dark);
 }
 
-.text-dark-2{
-    color: var(--color-dark-2);
+.text-dark-1 {
+  color: var(--color-dark-1);
 }
 
-.text-dark-3{
-    color: var(--color-dark-3);
+.text-dark-2 {
+  color: var(--color-dark-2);
 }
 
-.text-ligth-3{
-    color: var(--color-light-3)
+.text-dark-3 {
+  color: var(--color-dark-3);
 }
 
-.bg-primary-dark{
-    background-color: var(--color-primary-dark);
+.text-ligth-3 {
+  color: var(--color-light-3);
 }
 
-.bg-ligth-3{
-    background-color: var(--color-light-3);
+.fill-color-error {
+  fill: var(--color-alert-error);
 }
 
-.bg-white{
-    background-color: var(--color-white);
+.fill-color-primary-normal {
+  fill: var(--color-primary-normal);
 }
 
-.bg-transparent{
-    background-color: transparent;
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
 }
 
-.margin-none{
-    margin: 0;
+.bg-ligth-3 {
+  background-color: var(--color-light-3);
 }
 
-.icon{
-    width: 1.5rem;
-    height: 1.5rem;
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }

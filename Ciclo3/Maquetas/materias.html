@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/data.css" />
     <link rel="stylesheet" href="./css/button.css" />
     <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/table.css" />
     <link
       rel="icon"
       type="image/png"
@@ -43,7 +44,7 @@
   <body id="body-data-view">
     <header id="header-data-view" class="bg-ligth-3">
       <label id="menu-button" for="menu-check">
-        <svg class="icon">
+        <svg id="menu-icon">
           <use href="./img/icons.svg#menu"></use>
         </svg>
       </label>
@@ -66,7 +67,7 @@
       <div id="menu" class="bg-primary-dark">
         <input type="checkbox" id="menu-check" checked />
         <nav id="menu-content">
-          <button class="menu-button bg-transparent text-ligth-3 active">
+          <button class="menu-button bg-transparent text-ligth-3">
             <div class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#carreras"></use>
@@ -77,7 +78,7 @@
               <use href="./img/icons.svg#pagina-siguiente"></use>
             </svg>
           </button>
-          <button class="menu-button bg-transparent text-ligth-3">
+          <button class="menu-button bg-transparent text-ligth-3 active">
             <div class="icon-text">
               <svg class="icon-menu">
                 <use href="./img/icons.svg#materias"></use>
@@ -125,7 +126,7 @@
       </div>
       <div id="data">
         <div id="header-data">
-          <h2 class="text-h2 text-dark-2 margin-none">Carreras</h2>
+          <h2 class="text-h2 text-dark-2 margin-none">Materias</h2>
           <div id="controls">
             <div class="input-with-icon">
               <input
@@ -146,7 +147,46 @@
             </button>
           </div>
         </div>
-        <div id="data-table"></div>
+        <div id="data-table">
+          <table id="table" class="text-dark-2">
+            <tr>
+              <th class="table-title text-h5">Id Materia</th>
+              <th class="table-title text-h5">Nombre</th>
+              <th class="table-title text-h5">Id Carrera</th>
+              <th class="table-title text-h5">Acciones</th>
+            </tr>
+            <tr>
+              <td class="table-cell">1</td>
+              <td class="table-cell">Cálculo I</td>
+              <td class="table-cell">1</td>
+              <td class="table-cell">
+                <svg class="icon fill-color-primary-normal">
+                  <title>Editar</title>
+                  <use href="./img/icons.svg#editar"></use>
+                </svg>
+                <svg class="icon fill-color-error" >
+                  <title>Eliminar</title>
+                  <use href="./img/icons.svg#cancelar-eliminar"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-cell">2</td>
+              <td class="table-cell">Cálculo II</td>
+              <td class="table-cell">1</td>
+              <td class="table-cell">
+                <svg class="icon fill-color-primary-normal">
+                  <title>Editar</title>
+                  <use href="./img/icons.svg#editar"></use>
+                </svg>
+                <svg class="icon fill-color-error">
+                  <title>Eliminar</title>
+                  <use href="./img/icons.svg#cancelar-eliminar"></use>
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
